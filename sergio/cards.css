@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor{
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.montaña {
+    width: 350px;
+    height:200px;
+    background-color: burlywood;
+    margin: 10px;
+}
+
+.lago {
+    width: 350px;
+    height: 200px;
+    background-color: chartreuse;
+    margin: 10px;
+}
+
+.oceano {
+    width: 350px;
+    height: 200px;
+    background-color: rgb(201, 77, 164);
+    margin: 10px;
+}
