@@ -10,7 +10,7 @@ body {
 }
 
 .contenedor{
-    background-color: blue;
+    background-color: ;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -18,23 +18,24 @@ body {
     width: 80%;
 }
 
-.montaña {
-    width: 350px;
-    height:200px;
+.type {
+    width: 250px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#montaña {
     background-color: burlywood;
-    margin: 10px;
+    background-image: url(src/imgmountain.jpg);
 }
 
-.lago {
-    width: 350px;
-    height: 200px;
+#lago {
     background-color: chartreuse;
-    margin: 10px;
+    background-image: url(src/imglake.jpg);
 }
 
-.oceano {
-    width: 350px;
-    height: 200px;
+#oceano {
     background-color: rgb(201, 77, 164);
-    margin: 10px;
+    background-image: url(src/imgocean.jpg);
 }
