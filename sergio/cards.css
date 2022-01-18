@@ -10,31 +10,58 @@ body {
 }
 
 .contenedor{
-    background-color: blue;
+    background-color: ;
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    width: 80%;
+    width: 100%;
+
 }
 
-.montaña {
-    width: 350px;
-    height:200px;
-    background-color: burlywood;
+.type-a {
+    width: 300px;
+    height: 150px;
     margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#c4b8b8;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.lago {
-    width: 350px;
-    height: 200px;
-    background-color: chartreuse;
-    margin: 10px;
+.text-inside-img {
+    height: 60px;
 }
 
-.oceano {
-    width: 350px;
-    height: 200px;
-    background-color: rgb(201, 77, 164);
+.type-b {
+    width: 300px;
+    height: 150px;
     margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#999898;
+    padding: 10px;
+
+}
+
+
+
+
+
+#mountain-front {
+    background-image: url(src/imgmountain.jpg);
+}
+
+#lake-front {
+    background-image: url(src/imglake.jpg);
+}
+
+#ocean-front {
+    background-image: url(src/imgocean.jpg);
 }
