@@ -79,7 +79,10 @@
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .ttext p{
@@ -91,7 +94,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 200px;
+    /* min-width: 200px; */
+    min-width: max-content;
     font-size: 20px;
     
 }
@@ -130,6 +134,10 @@
     margin-right: 20px;
     margin-top: 0px;
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    min-width: 200px;
+    justify-content: center;
 }
 
 .packegetext.textos{
@@ -140,6 +148,39 @@
     box-shadow: none;
 }
 
+.most {
+    background-color: #3bbdee;
+    border-radius: 50%;
+    width: 20%;
+    height: 8.34%;
+    position: absolute;
+    left: 10px;
+    top: -10px; 
+}
+
+.most p{
+    color: white;
+    font-size: x-small; 
+    text-align: center;
+    justify-content: center;
+    margin-top: 9px;
+}
+
+.packege.most1{
+    position: relative;
+}
+
+sub,sup{
+    font-size: x-small;
+}
+
+.uno.money sup{
+    padding-right: 2px;
+}
+.uno.money sub{
+    padding-top: 15px;
+    padding-left: 3px;
+}
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
     .packege{
@@ -180,5 +221,30 @@
     .uno.money{
         margin-right: 0px;
     }
+    .most {
+        background-color: #3bbdee;
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        position: absolute;
+        left: 10px;
+        top: -10px; 
+    }
+    .most p{
+        color: white;
+        font-size: x-small; 
+        text-align: center;
+        justify-content: center;
+        margin-top: 5px;
+    }
 }
+
+@media screen and (min-width: 1023px){
+    .packege:hover{
+        transform: scale(1.08);
+        transition-property: transform;
+        transition-duration: 300ms;
+    }
+}
+
 
