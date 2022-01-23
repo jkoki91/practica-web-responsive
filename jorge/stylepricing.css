@@ -244,6 +244,7 @@ sub,sup{
         transform: scale(1.08);
         transition-property: transform;
         transition-duration: 300ms;
+        -o-transition-timing-function: linear;
     }
 }
 
