@@ -13,6 +13,7 @@
     height: 80%;
     padding: 20px;
     background-color: hotpink;
+    
 }    
 
 #logo1 { 
@@ -22,6 +23,7 @@
 
 
 }
+
 
 .div2__menu > *{
     height: 40px;
@@ -37,7 +39,8 @@ ul{
     justify-content: space-between;
     text-decoration: none;
     float: right;
-    margin-right: 20px;
+    /* margin-right: 20px; */
+    
     
 }
 
@@ -49,7 +52,8 @@ ul li{
 
 ul li a{
     text-decoration: none;
-    
+    color: black;
+    font-family: https://fonts.google.com/share?selection.family=Oswald:wght@500;
 }
 
 .div3__rrss > *{
@@ -67,3 +71,18 @@ ul li a{
 /* .div3__rrss > img{
     border-radius: 50%;
 } */
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: "oswald";
+    src: url(./Oswald.TTF);
+}
+
+
