@@ -10,10 +10,10 @@
     src: url(src/Oswald-VariableFont_wght.ttf);
 }
 
-*{
+*{ 
     font-family: "Oswald";
 }
-
+/* */
 
 /* MEDIA QUERY - MOVIL */
 @media (max-width: 600px) {
