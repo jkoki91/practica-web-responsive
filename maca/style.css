@@ -118,7 +118,9 @@ body{
 .icono-menu input:not(:checked) ~ .icono2 {
       display: none;
 } 
-
+.icono-menu input ~ .icono2 {
+    display: none;
+} 
 
 
 
