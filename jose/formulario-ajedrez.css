@@ -23,6 +23,7 @@
     justify-content: center;
     height: 300%;
     flex-wrap: wrap;
+    padding-top: 30px;
 
 }
 .titules {
@@ -164,7 +165,7 @@ input[type='radio']:after {
     width: 10px;
     height: 10px;
     border-radius: 10px;
-    position: relative;
+    
     background-color: #f8faf8;
     content: '';
     display: inline-block;
@@ -178,10 +179,37 @@ input[type='radio']:checked:after {
     height: 10px;
     border-radius: 10px;
 
-    position: relative;
+    
     background-color: #7e7d7c;
     content: '';
     display: inline-block;
     visibility: visible;
     border: 2px solid white;
+}
+
+#enviar {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 280px) {
+    .login_form {
+        width: 260px;
+    }
+    .nombre {
+        width: 260px;
+    }
+    
+    #enviar {
+        width: 260px;
+        margin-bottom: 30px;
+    }
+    #nombre {
+        width: 260px;
+    }
+    #email {
+        width: 260px;
+    }
+    .radio__statement {
+        font-size: 13px;
+    }
 }

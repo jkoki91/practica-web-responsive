@@ -9,192 +9,197 @@
     <link rel="stylesheet" href="formulario-ajedrez.css">
 </head>
 
-<body>
 <!-- container_one contains the background and the whole form -->
-    <div class="contenedor_uno">
+<div class="contenedor_uno">
         
-        <!-- el contenedor-padre contiene todo el formulario pero esta sobre el fondo -->
+    <!-- el contenedor-padre contiene todo el formulario pero esta sobre el fondo -->
 
-        <div class="contenerdor-padre">
-            <div class="form__master">
-                <!-- contenedor del titulo y el subtitulo tanto titules_first como titules _second tienen css -->
-                <div class="titules">
-                    <div class="titules_first">
-                        <h1> Formulario de contacto</h1>
-                    </div>
-                    <div class="titules_second">
-                        <p class="subtitulo">Gracias por tomarte tu tiempo para contactar con nosotros y ayudarnos a
-                            mejorar</p>
-                    </div>
+    <div class="contenerdor-padre">
+        <div class="form__master">
+            <!-- contenedor del titulo y el subtitulo tanto titules_first como titules _second tienen css -->
+            <div class="titules">
+                <div class="titules_first">
+                    <h1> Formulario de contacto</h1>
                 </div>
-                <!-- contiene tanto los input del formulario incluidos los radio y checkboxes -->
-                <div class="login_form">
-                    <form action="" method="post">
-                        <div class="nombre">
-                            <div class="nombre_dentro"><label class="label" for="nombre">Nombre</label></div>
-                            <div class="input_size">
-                                <input id="nombre" type="text" name="nombre" size="45" placeholder="Introduce tu nombre" required>
-                            </div>
-                        </div>
-                        <div class="nombre">
-                            <div class="nombre_dentro"><label for="email">Mail</label></div>
-                            <div class="input_size">
-                                <input type="email" id="email" name="email" size="45" placeholder="Example@mailserv.com" required>
-                            </div>
-                        </div>
-
-
-                        
-                        <!-- aunque este input pertenece a login_form div ha necesitado un css especial input[type] 
-                            para poder aplicarle carctateristicas espciales al input -->
-
-
-                        <div class="nombre">
-                            <div class="nombre_dentro"><label class="label" for="edad">Edad</label></div>
-                            <div class="input_size">
-                                <input type="number" id="edad" name="num" min="18" max="99" placeholder="Introduzaca su edad"required >
-                            </div>
-                        </div>
-
-                        <!-- input radio customizados para que el punto sea gris al ser checked -->
-                    </form>
+                <div class="titules_second">
+                    <p class="subtitulo">Gracias por tomarte tu tiempo para contactar con nosotros y ayudarnos a
+                        mejorar</p>
+                </div>
+            </div>
+            <!-- contiene tanto los input del formulario incluidos los radio y checkboxes -->
+            <div class="login_form">
+                <form action="" method="post">
                     <div class="nombre">
-                        <div class="nombre_dentro"><label class="label" for="rol">¿Que rol describiria mejor tu situacion actual?</label></div>
+                        <div class="nombre_dentro"><label class="label" for="nombre">Nombre</label></div>
                         <div class="input_size">
-                            <form name="formulario" id="formulario" action="" class="rol_style" method="POST">
-                                <datalist id="listas">
-                                    <option value="Estudiante">
-                                    <option value="Trabajo a tiempo completo">
-                                    <option value="Freelance">
-                                    <option value="Busco trabajo">
-                                </datalist>
-                                <input id="rol" name="color" list="listas">
-                            </form>
+                            <input id="nombre" type="text" name="nombre" size="45" placeholder="Introduce tu nombre" required>
                         </div>
                     </div>
-
-                    <!-- bloque recomendaciones -->
-
-
-                    <div class="recomendation">
-                        <label for="optradio">
-                            <p class="form__statement">¿Recomendaria esta pagina a sus contactos?</p>
-                        </label>
-                    </div>
-                    <div class="radio__statement">
-                        <div class="radio__statement__in">
-                            <label for="def_si">Definitivamente si</label>
-                            <input type="radio" id="def_si" name="radioreq" value="def_si" checked>
-                            
-                        </div>
-                        <div class="radio__statement__in">
-                            <label for="quiza">Quiza</label>
-                            <input type="radio" id="quiza" name="radioreq" value="quiza">
-                           
-                        </div>
-                        <div class="radio__statement__in">
-                            <label for="notabs">No estoy seguro</label>
-                            <input type="radio" id="notabs" name="radioreq" value="notabs">
-                            
+                    <div class="nombre">
+                        <div class="nombre_dentro"><label for="email">Mail</label></div>
+                        <div class="input_size">
+                            <input type="email" id="email" name="email" size="45" placeholder="Example@mailserv.com" required>
                         </div>
                     </div>
 
 
+                    
+                    <!-- aunque este input pertenece a login_form div ha necesitado un css especial input[type] 
+                        para poder aplicarle carctateristicas espciales al input -->
 
 
-                    <!-- Bloque de los checkbox con recomendaciones -->
-
-
-
-
-                    <div class="form__statement_principal"></div>
-                    <div>
-                        <p class="form__statement">¿Que recomendaciones te gustaria recibir</p>
+                    <div class="nombre">
+                        <div class="nombre_dentro"><label class="label" for="edad">Edad</label></div>
+                        <div class="input_size">
+                            <input type="number" id="edad" name="num" min="18" max="99" placeholder="Introduzaca su edad"required >
+                        </div>
                     </div>
-                    <div class="recomendaciones">
-                        <form class="form__checks">
-                            <div class="form__checks_space">
-                                <input type="checkbox" id="proyecto-front" name="proyecto-front" checked>
-                                <label for="proyecto-front">Proyecto Front-end</label>
-                            </div>
-                            <div class="form__checks_space">
-                                <input type="checkbox" id="proyecto-back" name="proyecto-back">
-                                <label for="proyecto-back">Proyecto Back-end</label>
-                            </div>
-                            <div class="form__checks_space">
-                                <input type="checkbox" id="rrss" name="rrsst" checked>
-                                <label for="rrss">Social Media (Marketing)</label>
-                            </div>
-                            <div class="form__checks_space">
-                                <input type="checkbox" id="juegos" name="juegos" checked>
-                                <label for="juegos">Desarrollo de Videojuegos</label>
-                            </div>
-                            <div class="form__checks_space">
-                                <input type="checkbox" id="tutoriales" name="tutoriales" checked>
-                                <label for="tutoriales">Tutoriales de UX/UI</label>
-                            </div>
-                            <div class="form__checks_space">
-                                <input type="checkbox" id="otros" name="otros" checked>
-                                <label for="otros">Otros</label>
-                            </div>
 
+                    <!-- input radio customizados para que el punto sea gris al ser checked -->
+                </form>
+                <div class="nombre">
+                    <div class="nombre_dentro"><label class="label" for="rol">¿Que rol describiria mejor tu situacion actual?</label></div>
+                    <div class="input_size">
+                        <form name="formulario" id="formulario" action="" class="rol_style" method="POST">
+                            <datalist id="listas">
+                                <option value="Estudiante">
+                                <option value="Trabajo a tiempo completo">
+                                <option value="Freelance">
+                                <option value="Busco trabajo">
+                            </datalist>
+                            <input id="rol" name="color" list="listas">
                         </form>
                     </div>
                 </div>
 
+                <!-- bloque recomendaciones -->
 
-                <!-- bloque solicitud llamad     -->
 
-
-                <div class="nombre">
-                    <div class="nombre_dentro"><label class="label" for="solicitud">
-                            <p class="form__statement">¿Cuando prefieres que te contactasemos?</p>
-                        </label></div>
-                    <div class="input_size">
-                        <input type="datetime-local" style="width: 370px;height: 25px;" id="solicitud" name="solicitud"
-                            min="2022-01-01T00:00" max="2024-01-01T00:00">
+                <div class="recomendation">
+                    <label for="optradio">
+                        <p class="form__statement">¿Recomendaria esta pagina a sus contactos?</p>
+                    </label>
+                </div>
+                <div class="radio__statement">
+                    <div class="radio__statement__in">
+                        <label for="def_si">Definitivamente si</label>
+                        <input type="radio" id="def_si" name="radioreq" value="def_si" checked>
+                        
+                    </div>
+                    <div class="radio__statement__in">
+                        <label for="quiza">Quiza</label>
+                        <input type="radio" id="quiza" name="radioreq" value="quiza">
+                       
+                    </div>
+                    <div class="radio__statement__in">
+                        <label for="notabs">No estoy seguro</label>
+                        <input type="radio" id="notabs" name="radioreq" value="notabs">
+                        
                     </div>
                 </div>
 
 
 
-                <!-- bloque otros comentarios -->
+
+                <!-- Bloque de los checkbox con recomendaciones -->
 
 
 
 
-                <div class="nombre">
-                    <div class="nombre_dentro"><label class="label" for="texto">
-                            <p class="form__statement">Otros comentarios y sugerencias</p>
-                        </label>
-                    </div>
-                    <form class="input_size" action="">
-                        <textarea id="texto" name="message" style="width: 375px; height: 100px;"
-                            placeholder="Introduzca sus comentarios"></textarea>
-                            
-                            
+                <div class="form__statement_principal"></div>
+                <div>
+                    <p class="form__statement">¿Que recomendaciones te gustaria recibir</p>
+                </div>
+                <div class="recomendaciones">
+                    <form class="form__checks">
+                        <div class="form__checks_space">
+                            <input type="checkbox" id="proyecto-front" name="proyecto-front" checked>
+                            <label for="proyecto-front">Proyecto Front-end</label>
+                        </div>
+                        <div class="form__checks_space">
+                            <input type="checkbox" id="proyecto-back" name="proyecto-back">
+                            <label for="proyecto-back">Proyecto Back-end</label>
+                        </div>
+                        <div class="form__checks_space">
+                            <input type="checkbox" id="rrss" name="rrsst" checked>
+                            <label for="rrss">Social Media (Marketing)</label>
+                        </div>
+                        <div class="form__checks_space">
+                            <input type="checkbox" id="juegos" name="juegos" checked>
+                            <label for="juegos">Desarrollo de Videojuegos</label>
+                        </div>
+                        <div class="form__checks_space">
+                            <input type="checkbox" id="tutoriales" name="tutoriales" checked>
+                            <label for="tutoriales">Tutoriales de UX/UI</label>
+                        </div>
+                        <div class="form__checks_space">
+                            <input type="checkbox" id="otros" name="otros" checked>
+                            <label for="otros">Otros</label>
+                        </div>
+
                     </form>
-                </div>
-
-
-                <!-- boton de submit -->
-                 <div>
-                    <input type="submit" style="width: 375px;height: 30px;color: black;background-color: white;"action="www.google.es">
-
                 </div>
             </div>
 
-            </form>
+
+            <!-- bloque solicitud llamad     -->
+
+
+            <div class="nombre">
+                <div class="nombre_dentro"><label class="label" for="solicitud">
+                        <p class="form__statement">¿Cuando prefieres que te contactasemos?</p>
+                    </label></div>
+                <div class="input_size">
+                    <input type="datetime-local" style="height: 25px;" id="solicitud" name="solicitud"
+                        min="2022-01-01T00:00" max="2024-01-01T00:00">
+                </div>
+            </div>
+
+
+
+            <!-- bloque otros comentarios -->
+
+
+
+
+            <div class="nombre">
+                <div class="nombre_dentro"><label class="label" for="texto">
+                        <p class="form__statement">Otros comentarios y sugerencias</p>
+                    </label>
+                </div>
+                <form class="input_size" action="">
+                    <textarea id="texto" name="message" style="width: 375px; height: 100px;"
+                        placeholder="Introduzca sus comentarios"></textarea>
+                        
+                        
+                </form>
+            </div>
+
+
+            <!-- boton de submit -->
+             <div>
+                <input type="submit" id="enviar" style="height: 30px;color: black;background-color: white;"action="www.google.es">
+
+            </div>
         </div>
+
+        </form>
     </div>
+</div>
 
-    </div>
+</div>
 
-    </div>
+</div>
 
 
-    </div>
+</div>
 
+</div>
+
+
+
+        
+<body>
 
 </body>
 
