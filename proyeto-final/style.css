@@ -4,6 +4,15 @@
     font-family:'Oswald', sans-serif ;
     src: url(./Oswald-VariableFont_wght.ttf);
 }
+*{  margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: #1b1c20;
+
+}
 
 
 body{
@@ -1701,7 +1710,7 @@ padding: 30px;
     background: #333333;
 */
 
-/* PARTE CSS JOSE */
+PARTE CSS JOSE
 
 .container_body {
     display: flex;
